@@ -46,7 +46,7 @@ body {
 }
 
 .background {
-  background: whitesmoke;
+  background: #330033;
   position: fixed;
   right: 0;
   width: 100%;
@@ -54,14 +54,25 @@ body {
   z-index: -1;
 }
 
-.clickable {
+.clickableFav {
   color: dodgerblue;
   cursor: pointer;
   user-select: none;
 }
 
+.clickableFav:hover {
+  transform: translateY(2px);
+}
+
+.clickable {
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
 .clickable:hover {
-  color: brown;
+  transition-duration: 0.2s;
+  transform: scale(115%, 115%)
 }
 
 /* Images Container */
@@ -101,7 +112,8 @@ body {
 
 /* Save Confirmation */
 .save-confirmed {
-  background: white;
+  background: #330033;
+  color: whitesmoke;
   padding: 8px 16px;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
